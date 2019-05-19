@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Bootstrap - Prebuilt Layout</title>
+
+	<!-- Bootstrap -->
+	<link href="css/home.css" rel="stylesheet">
+	<link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+
+	<!--	Monsserat Font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+
+	<style>
+		body {
+			font-family: 'Montserrat', sans-serif;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="row">
+		<nav class="nav">
+			<div class="navbar-home-red">
+				<div class="form-social">
+					<nav class="nav ml-auto">
+						<div>
+							<label for=""><strong>Receba novidades</strong></label>
+							<input class="news-form" type="text" placeholder="Email:" value="">
+							<button class="btn-submit" type="button" name="button">ENVIAR</button>
+						</div>
+						<div style="margin-left:35px">
+							<a href="https://www.facebook.com/choppbrasiliabier/"><button class="btn-social" type="button" name="button"><i class="fab fa-facebook-f"></i></button></a>
+							<a href="https://www.instagram.com/choppbrasilia/"><button class="btn-social rounded-circle" type="button" name="button"><i class="fab fa-instagram"></i></button></a>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<div class="nav navbar-home-white">
+				<div class="menu-nav">
+					<nav class="nav ml-auto">
+						<ul class="nav">
+							<li class="nav-item menu-item">Home</li>
+							<li class="nav-item menu-item">Quem Somos</li>
+							<li class="nav-item menu-item">Distribuidores</li>
+							<li class="nav-item menu-item">Calcule seu Chopp</li>
+							<li class="nav-item menu-item">Produtos Parceiros</li>
+							<li class="nav-item menu-item">Peça seu Chopp</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<img src="images/logo.png" class="navbar-brand logo img-fluid" align="left">
+		</nav>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="banner-div">
+				<img class="img-fluid banner-image" src="images/banner-topo-distribuidor.png">
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="about-div">
+				<img class="img-about" src="images/Imagem_quem_somos.png">
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="about-div-text">
+				<p class="about-text">A Cervejaria <strong>Brasília Bier</strong> iniciou ruas atividades no ano de 2007 no Distrito Federal,
+					com a proposta de oferecer um produto de alta qualidade para um público exigente e apreciador de um excelente chopp.
+					<br><br>
+					Com sede própria em Brasília, possuímos espalhados nas mais diversas regiões, proporcionando mais rapidez e eficácia na hora
+					de atender o consumidor. Além da entrega de chopp em domicilio, festas e eventos, fazemos também o atendimento a bares
+					e restaurantes.</p>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<div class="distributor">
+				<div class="find-distributor">
+					<p>Encontre o <strong>distribuidor</strong><br> mais próximo de você.</p>
+					<button class="btn-distributor" type="button" name="button">BUSCAR</button>
+				</div>
+			</div>
+		</div>
+		<div class="col-md">
+			<img src="images/vetor_distribuidores.png">
+		</div>
+	</div>
+	<div class="row calculator-div" style="background-image: url(images/calcule-o-seu-chopp.png); margin-bottom: 50px">
+		<div class=" container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 style="font-style: italic" class="text-center m-5"><b>CALCULE SEU <b>CHOPP</b></b></h1>
+				</div>
+			</div>
+		</div>
+		<div id="calc-img" class="col-md-6">
+			<div class="row">
+				<img class="img-fluid d-block calculator-img" src="images/imagem_calcule_seu_chopp.png">
+			</div>
+		</div>
+		<div id="text" class="col-md-6" style="padding-left: 0px; margin-top: 45px">
+			<p class="calculator-text">Para saber a quantidade de chopp necessária para seu evento, faremos aqui um cálculo aproximado,
+				levando-se em consideração o número de pessoas que estarão presentes. Aproveite e beba com moderação.</p>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="row">
+						<p><b>HOMENS</b></p>
+					</div>
+					<div class="row">
+						<input type="number" class="form-control bg-input" style="width: 80%">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="row">
+						<p><b>MULHERES</b></p>
+					</div>
+					<div class="row">
+						<input type="number" class="form-control bg-input" style="width: 80%">
+					</div>
+				</div>
+				<button type="submit" class="btn btn-calc">CALCULAR</button>
+			</div>
+			<div class="row">
+				<span class="c-result">RESULTADO (<b>ESTIMATIVA DE LITROS NECESSÁRIOS</b>)</span>
+				<div class="calculator-result">
+					<span contenteditable="true" id="calc-result">58 </span><span>Litros</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row" style="background-color: #D0961F; color: white; padding-bottom: 35px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 style="font-style: italic" class="py-5 text-center"><b>PRODUTOS</b></h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="img-sample"></div>
+				</div>
+				<div class="col-md-3">
+					<div class="img-sample"></div>
+				</div>
+				<div class="col-md-3">
+					<div class="img-sample"></div>
+				</div>
+				<div class="col-md-3">
+					<div class="img-sample"></div>
+				</div>
+			</div>
+			<div class="col-md-12" align="center">
+				<button id="product-button" class="btn">SAIBA MAIS</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="row" id="ask-chopp">
+		<div class="col-md-12 text-center">
+			<h1 class="m-5" style="font-style: italic">PEÇA SEU <b style="font-weight: 900; color: #E22626;">CHOPP BRASÍLIA</b></h1>
+		</div>
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="row">
+						<label>NOME:</label>
+					</div>
+					<div class="row">
+						<input type="text" class="form-control" style="width:80%">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="row">
+						<label><i class="fab fa-whatsapp"></i>TELEFONE/WHATSAPP:</label>
+					</div>
+					<div class="row">
+						<input type="text" class="form-control" style="width:80%">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<label style="margin-top: 0.5rem">EMAIL:</label>
+			</div>
+			<div class="row">
+				<input type="text" class="form-control" style="width: 90%">
+			</div>
+			<div class="row">
+				<label style="margin-top: 0.5rem">ENDEREÇO DO EVENTO:</label>
+			</div>
+			<div class="row">
+				<input type="text" class="form-control" style="width: 90%">
+			</div>
+			<div class="row">
+				<label style="margin-top: 0.5rem">DATA:</label>
+			</div>
+			<div class="row">
+				<input type="date" class="form-control" style="width: 90%">
+			</div>
+			<div style="padding-top: 10px;" class="row">
+				<div class="col-md-3">
+					<div class="row">
+						<label>30 LITROS:</label>
+					</div>
+					<div class="row">
+						<input type="checkbox" class="form-control">
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="row">
+						<label>QNTD:</label>
+					</div>
+					<div class="row">
+						<input type="number" class="form-control" style="background-color: white" style="width: 60%;">
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="row">
+						<label>50 LITROS:</label>
+					</div>
+					<div class="row">
+						<input type="checkbox" class="form-control">
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="row">
+						<label>QNTD:</label>
+					</div>
+					<div class="row">
+						<input type="text" class="form-control" style="width:60%">
+					</div>
+				</div>
+			</div>
+			<div class=	"row">
+				<button id="btn-ask" class="btn">ENVIAR PEDIDO</button>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<img id="chopp-img" src="images/imagem_pe%C3%A7a_seu_chopp.png">
+		</div>
+	</div>
+	<div id="footer" class="row">
+		<div class="col-md-3">
+			<img id="img-footer" src="images/Logo.png">
+		</div>
+		<div class="col-md-3" style="margin-right: -15px">
+			<p><b>Links</b></p>
+			<ul class="nav flex-column">
+				<li class="nav-item"><a>Quem Somos</a></li>
+				<li class="nav-item"><a>Distribuidores</a></li>
+				<li class="nav-item"><a>Chopp</a></li>
+				<li class="nav-item"><a>Calcule seu Chopp</a></li>
+				<li class="nav-item"><a>Produtos Parceiros</a></li>
+				<li class="nav-item"><a>Peça seu Chopp</a></li>
+			</ul>
+		</div>
+		<div class="col-md-3">
+			<p><b>Fale Conosco</b></p>
+			<ul class="nav" style="width: 280px;">
+				<li>0800 000 000</li>
+				<li>Segunda a Sexta das 09 às 18h.</li>
+				<li>Sábados das 10h às 17h.</li>
+				<li>Assistência Técnica (atendimento por telefone): Segunda à Domingo, das 09h às 23h.</li>
+			</ul>
+		</div>
+		<div id="midias-sociais-div" class="col-md-3">
+			<div class="row">
+				<p style="margin-bottom: 5px;"><b>Mídias Sociais</b></p>
+			</div>
+			<div class="row">
+				<a href="https://www.facebook.com/choppbrasiliabier/"><button class="btn-social" type="button" name="button"><i class="fab fa-facebook-f"></i></button></a>
+				<a href="https://www.instagram.com/choppbrasilia/"><button class="btn-social rounded-circle" type="button" name="button"><i class="fab fa-instagram"></i></button></a>
+			</div>
+			<div class="row" align="center">
+				<div class="container" style="align: center">
+					<div id="midias-sociais" class="row">
+						<p style="margin-bottom: 0px;">PROBIDO PARA MENORES DE 18 ANOS</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap-4.0.0.js"></script>
+</body></html>
